@@ -1,10 +1,11 @@
 
 import './App.css';
+import Header from './component/Header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <h1>this is flip-cart apppppp................</h1>
+    <div>
+      <Header></Header>
     </div>
   );
 }
