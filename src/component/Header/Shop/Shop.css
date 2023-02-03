@@ -9,3 +9,9 @@
     gap: 3px;
     row-gap: 30px;
 }
+.cart-container{
+    background-color: tomato;
+    height: 500px;
+    padding: 10px;
+    border-radius: 5px;
+}
