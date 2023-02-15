@@ -1,0 +1,47 @@
+.img-container img{
+    width: 91px;
+    border-radius: 5px;
+}
+.review-container{
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 7px;
+    width: 571px;
+    margin: 21px auto;
+}
+.info-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+
+    
+}
+.detail p{
+    margin: 0;
+}
+.img-container{
+    margin-right: 17px;
+}
+.icon-container{
+    color: brown;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    background-color:gray;
+    
+
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    
+    
+}
+.deltete{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    
+}

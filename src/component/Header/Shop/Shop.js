@@ -41,8 +41,10 @@ const Shop = () => {
         fetch("products.json")
         .then(res=>res.json())
         .then(data=>setProduct(data))
+        
     }
     ,[])
+    
     return (
         <div className='shop'>
             <div className='product-container'>
