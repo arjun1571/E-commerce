@@ -1,0 +1,59 @@
+.form-container{
+    width: 400px;
+    height: 550px;
+    background: #FFFFFF;
+    border: 1px solid #95A0A7;
+    border-radius: 8px; 
+    margin: 30px auto;
+    padding: 50px;
+}
+.logo{
+    font-weight: 400;
+    font-size: 25px;
+
+    color: #2A414F;
+    text-align: center;
+}
+.log-text{
+    font-weight: 300px;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0.0025em;
+    color: #2A414F;
+    text-align: center;
+ }
+
+ .form-input label{
+    display: block;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #2A414F;
+    margin-bottom: 10px;
+
+ }
+ .form-input input{
+    width: 415px;
+    height: 55px;
+    left: 526px;
+    top: 346px;
+    border: 1px solid #95A0A7;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+    
+ }
+ .form-input{
+    margin-bottom: 10px;
+ }
+ .button-log{
+    width: 430px;
+    height: 50px;
+    background: #FFE0B3;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+
+
+ }
