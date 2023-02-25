@@ -7,6 +7,7 @@ import Review from '../Review/Review';
 const Order = () => {
 const {products,initialCart} = useLoaderData();
     const [cart,setCart]=useState(initialCart)
+    console.log(products);
     const handleRemove =(id)=>{
         const remaning = cart.filter(product => product.id !== id);
         setCart(remaning);
