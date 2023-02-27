@@ -27,10 +27,17 @@ const Header = () => {
                 <Link to="inventory">Manage Inventory</Link>
                 <Link to="order">Order</Link> 
                 <Link to="about">About</Link> 
-                <Link to="login">LogIn</Link> 
-                <Link to="signup">SignUp</Link>
                 <Link >{user?.email}</Link>
-                <button onClick={hadleonClik}>sign Out</button>
+                {
+                    user?.uid ? <button onClick={hadleonClik}>sign Out</button>
+                    :
+                    <>
+                        <Link to="login">LogIn</Link> 
+                        <Link to="signup">SignUp</Link>
+                    </>
+                }
+                
+                
             </div>
         </nav>
     );
