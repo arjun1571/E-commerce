@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "./SignUp.css"
 
 const SignUp = () => {
+    const [error,setError]=useState(null)
+    const handleSubmit =(event)=>{
+        event.preventDefault();
+        const form =event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        const Confirm =form.Confirm.value;
+        console.log(email, password, Confirm);
+        if(password !== Confirm){
+            setError("password do not match")
+        }
+        
+
+    }
     return (
         <div className='form-container'> 
+        <p>{error}</p>
             <h2 className='log-text'>LogIn</h2>
-            <form >
+            <form onSubmit={handleSubmit}>
                 <div className='form-input'>
                     <label htmlFor="eamil">Email</label>
                     <input type="email" name='email' placeholder='email' required />
