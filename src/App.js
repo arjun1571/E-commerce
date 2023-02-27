@@ -21,12 +21,18 @@ function App() {
       element: <Main></Main>,
       children:[
         {
+          path:"/",
+          element:<Shop></Shop>,
+        },
+        {
           path:"/shop",
           element:<Shop></Shop>,
         },
         {
           path: "/inventory",
-          element: <Inventory></Inventory>
+          element: <PrivateRoute>
+            <Inventory></Inventory>
+          </PrivateRoute>
         },
         {
           path: "/shiping",

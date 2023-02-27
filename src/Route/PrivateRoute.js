@@ -4,7 +4,10 @@ import { AuthContext } from '../context/UserContext';
 
 const PrivateRoute = ({children}) => {
    const location=  useLocation();
-    const {user}=useContext(AuthContext);
+    const {user,loading}=useContext(AuthContext);
+    if(loading){
+        return <div>logding ....................</div>
+    }
     if(user && user.uid){
         return children
     }
