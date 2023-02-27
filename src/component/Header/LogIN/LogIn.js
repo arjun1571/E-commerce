@@ -9,7 +9,7 @@ const LogIn = () => {
             <form >
                 <div className='form-input'>
                     <label htmlFor="eamil">Email</label>
-                    <input type="text" name='email' placeholder='email' required />
+                    <input type="email" name='email' placeholder='email' required />
                 </div>
                 <div className='form-input'>
                     <label htmlFor="password">Password</label>
