@@ -11,6 +11,8 @@ import Order from './component/Order/Order';
 import { productAndCartLoder } from './loders/Product&Cartloder';
 import SignUp from './component/SingnUp/SignUp';
 import About from './component/About/About';
+import Shiping from './component/Shiping/Shiping';
+import PrivateRoute from './Route/PrivateRoute';
 
 function App() {
   const router = createBrowserRouter([
@@ -25,6 +27,12 @@ function App() {
         {
           path: "/inventory",
           element: <Inventory></Inventory>
+        },
+        {
+          path: "/shiping",
+          element: <PrivateRoute>
+            <Shiping></Shiping>
+          </PrivateRoute>
         },
         {
           path: "login",
